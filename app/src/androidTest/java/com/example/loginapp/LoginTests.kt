@@ -32,4 +32,11 @@ class LoginTest {
             .checkLoginButtonIsDisable()
     }
 
+    @Test fun checkLoginButtonIsEnableWithPasswordByPO() {
+        LoginPage().setUserName("Vladimir")
+            .setPassword("qwerty")
+            .checkLoginButtonIsEnable()
+    }
+
+
 }
